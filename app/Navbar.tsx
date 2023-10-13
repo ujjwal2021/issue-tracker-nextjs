@@ -7,7 +7,6 @@ import classNames from "classnames";
 
 const Navbar = () => {
   const currPath = usePathname();
-  console.log(currPath == '/');
   
   const links = [
     { label: "Dashboard", href: "/" },
@@ -25,7 +24,7 @@ const Navbar = () => {
                 key={item.href}
               href={item.href}
               className={classNames({
-                "text-zinc-950": item.href == currPath,
+                "text-red-500": item.href == currPath,
                 "text-zinc-500": item.href != currPath,
                 "hover: text-zinc-800 transition-colors": true,
               })}

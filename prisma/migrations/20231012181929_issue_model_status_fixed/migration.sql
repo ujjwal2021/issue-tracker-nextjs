@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `Issue` MODIFY `status` ENUM('OPEN', 'ACTIVE', 'CLOSED') NOT NULL DEFAULT 'OPEN';
